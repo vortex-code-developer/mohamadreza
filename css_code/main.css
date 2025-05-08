@@ -16,11 +16,18 @@
 }
 
 .asterisk {
-    display: inline-block;
     font-size: 10px;
     color: red;
 }
-
+.circle_info{
+    margin-right: auto;
+    font-size: 15px;
+    color: #9e998a;
+    cursor: pointer;
+}
+.circle_info:hover{
+    color: #6b685d;
+}
 .label_asterisk {
     display: flex;
     gap: 8px;
@@ -82,6 +89,13 @@
 }
 
 .style_input_002 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.style_input_003 {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

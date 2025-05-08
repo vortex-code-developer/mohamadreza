@@ -12,13 +12,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="Z_logo_and_images/my_website_logos/logo_website.png">
 
-    <link rel="stylesheet" href="css_code/header.css">
+    <link rel="stylesheet" href="_css_code/header.css">
 
-    <link rel="stylesheet" href="css_code/main.css">
+    <link rel="stylesheet" href="_css_code/main.css">
 
-    <link rel="stylesheet" href="css_code/footer.css">
+    <link rel="stylesheet" href="_css_code/footer.css">
 
-    <link rel="stylesheet" href="css_code/reset_css.css">
+    <link rel="stylesheet" href="_css_code/reset_css.css">
 
     <style>
         body {
@@ -32,10 +32,6 @@
         }
 
         @media screen and (max-width: 1420px) {
-            .main_container_item {
-                max-width: 94%;
-            }
-
             .title_header_and_logo_menu {
                 width: 100%;
                 display: flex;
@@ -55,27 +51,60 @@
             .header_item, .language {
                 display: none;
             }
+
+            .main_container_item {
+                max-width: 94%;
+            }
+        }
+
+        @media screen and (max-width: 1345px) {
+            .style_input_002 {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .style_input_003 {
+                flex-direction: column;
+            }
+            .project_category_001{
+                flex-direction: column;
+            }
+            .project_category_002{
+                width: 100%;
+                margin-bottom: 18px;
+            }
+            .main_container_item{
+                border-radius: 24px;
+                padding: 34px;
+            }
         }
 
         @media screen and (max-width: 600px) {
             .title_header {
                 font-size: 1.9rem;
             }
+            .main_container_title_001{
+                font-size: 1.9rem;
+            }
         }
 
         @media screen and (max-width: 550px) {
-            .title_header {
-                font-size: 1.7rem;
-            }
             .header_container {
                 height: 80px;
                 border-radius: 0 0 24px 24px;
                 padding: 0 28px;
             }
-            .logo_menu{
+            .title_header {
+                font-size: 1.7rem;
+            }
+            .logo_menu {
                 font-size: 26px;
                 padding: 7px 9px;
                 border-radius: 9px;
+            }
+            .main_container_title_001{
+                font-size: 1.7rem;
             }
         }
 
@@ -86,18 +115,20 @@
         }
 
         @media screen and (max-width: 420px) {
-            .title_header {
-                font-size: 1.4rem;
-            }
-            .logo_menu{
-                font-size: 23px;
-                padding: 5px 7px;
-                border-radius: 7px;
-            }
             .header_container {
                 height: 70px;
                 border-radius: 0 0 22px 22px;
                 padding: 0 24px;
+            }
+
+            .title_header {
+                font-size: 1.4rem;
+            }
+
+            .logo_menu {
+                font-size: 23px;
+                padding: 5px 7px;
+                border-radius: 7px;
             }
         }
 
@@ -108,56 +139,41 @@
         }
 
         @media screen and (max-width: 380px) {
-            .title_header {
-                font-size: 1.2rem;
-            }
-            .logo_menu{
-                font-size: 21px;
-                padding: 4px 6px;
-                border-radius: 6px;
-            }
             .header_container {
                 height: 60px;
                 border-radius: 0 0 20px 20px;
                 padding: 0 22px;
             }
+
+            .title_header {
+                font-size: 1.2rem;
+            }
+
+            .logo_menu {
+                font-size: 21px;
+                padding: 4px 6px;
+                border-radius: 6px;
+            }
         }
 
-        @media screen and (max-width: 350px){
-            .title_header {
-                font-size: 1rem;
-            }
-            .logo_menu{
-                font-size: 18px;
-                padding: 3px 5px;
-                border-radius: 5px;
-            }
+        @media screen and (max-width: 350px) {
             .header_container {
                 height: 50px;
                 border-radius: 0 0 18px 18px;
                 padding: 0 20px;
             }
+
+            .title_header {
+                font-size: 1rem;
+            }
+
+            .logo_menu {
+                font-size: 18px;
+                padding: 3px 5px;
+                border-radius: 5px;
+            }
         }
 
-        /*@media screen and (max-width: 1260px) {*/
-        /*    .method_contact_001 {*/
-        /*        display: block;*/
-        /*    }*/
-        /*    .method_contact_003 {*/
-        /*        margin-top: 21px;*/
-        /*    }*/
-        /*}*/
-
-        /*@media screen and (max-width: 790px) {*/
-
-        /*    .project_category_001{*/
-        /*        display: block;*/
-        /*    }*/
-        /*    .project_category_002{*/
-        /*        width: 100%;*/
-        /*        margin-right: 0;*/
-        /*    }*/
-        /*}*/
     </style>
 </head>
 
@@ -223,206 +239,237 @@
             <p class="main_container_item_title_002">جهت ثبت سفارش لطفا فرم زیر را تکمیل کنید</p>
             <div class="style_input_001">
                 <div class="style_input_002">
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="first_name_1" class="label">نام خود را وارد کنید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="first_name_1" class="label">نام خود را وارد کنید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="first_name_1" class="input_text" type="text">
                         </div>
-                        <input id="first_name_1" class="input_text" type="text">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="last_name_1" class="label">نام خانوادگی خود را وارد کنید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="last_name_1" class="input_text" type="text">
+                        </div>
                     </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="last_name_1" class="label">نام خانوادگی خود را وارد کنید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="email_1" class="label">ایمیل خود را وارد کنید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="email_1" class="input_text" type="email">
                         </div>
-                        <input id="last_name_1" class="input_text" type="text">
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="email_1" class="label">ایمیل خود را وارد کنید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="phone_1" class="label">شماره تماس خود را وارد کنید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="phone_1" class="input_text" type="tel">
                         </div>
-                        <input id="email_1" class="input_text" type="email">
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="phone_1" class="label">شماره تماس خود را وارد کنید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <input id="phone_1" class="input_text" type="tel">
                     </div>
                 </div>
                 <div class="style_input_002">
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="website_type_1" class="label">نوع وبسایت</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="website_type_1" class="label">نوع وبسایت</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <select id="website_type_1" class="menu_input_003">
+                                <option>- انتخاب کنید -</option>
+                                <option>وبسایت شرکتی</option>
+                                <option>وبسایت فروشگاهی</option>
+                                <option>وبسایت شخصی</option>
+                                <option>سایر</option>
+                            </select>
                         </div>
-                        <select id="website_type_1" class="menu_input_003">
-                            <option>- انتخاب کنید -</option>
-                            <option>وبسایت شرکتی</option>
-                            <option>وبسایت فروشگاهی</option>
-                            <option>وبسایت شخصی</option>
-                            <option>سایر</option>
-                        </select>
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="request_type" class="label">نوع درخواست</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <select id="request_type" class="menu_input_003">
+                                <option>- انتخاب کنید -</option>
+                                <option>طراحی و توسعه وبسایت</option>
+                                <option>بهبود وبسایت</option>
+                                <option>تحلیل و بهبود SEO</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="request_type" class="label">نوع درخواست</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="business_name_1" class="label">نام کسب و کار خود را وارد کنید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="business_name_1" class="input_text" type="text">
                         </div>
-                        <select id="request_type" class="menu_input_003">
-                            <option>- انتخاب کنید -</option>
-                            <option>طراحی و توسعه وبسایت</option>
-                            <option>بهبود وبسایت</option>
-                            <option>تحلیل و بهبود SEO</option>
-                        </select>
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="business_field_1" class="label">حوزه فعالیت کسب‌ و کار</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="business_field_1" class="input_text" type="text">
+                        </div>
                     </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="business_name_1" class="label">نام کسب و کار خود را وارد کنید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
+                </div>
+
+                <div class="style_input_002">
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="website_goal" class="label">هدف اصلی وبسایت</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="website_goal" class="input_text" type="text">
                         </div>
-                        <input id="business_name_1" class="input_text" type="text">
+                        <div class="label_and_input">
+                            <!-- این به زبان محتوای وبسایت اشاره دارد، نه زبان‌های برنامه‌نویسی -->
+                            <div class="label_asterisk">
+                                <label for="language_website" class="label">آیا وب‌ سایت چند زبانه باشد</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                                <i class="fa-solid fa-circle-info circle_info"></i>
+                            </div>
+                            <select id="language_website" class="menu_input_003">
+                                <option>- انتخاب کنید -</option>
+                                <option>بله وبسایت چند زبانه باشد</option>
+                                <option>خیر نیاز ندارم</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="business_field_1" class="label">حوزه فعالیت کسب‌ و کار</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="number_of_monthly_visits" class="label">چقدر بازدید ماهیانه انتظار
+                                    دارید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="number_of_monthly_visits" class="input_text" type="text">
                         </div>
-                        <input id="business_field_1" class="input_text" type="text">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="seo" class="label">آیا به SEO نیاز دارید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                                <i class="fa-solid fa-circle-info circle_info"></i>
+                            </div>
+                            <select id="seo" class="menu_input_003">
+                                <option>- انتخاب کنید -</option>
+                                <option>بله به SEO نیاز دارم</option>
+                                <option>خیر به SEO نیاز ندارم</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="label_and_input">
+                    <div class="label_asterisk">
+                        <label for="connecting_to_other_services" class="label">اتصال به سرویس ‌های دیگر</label>
+                        <i class="fa-solid fa-asterisk asterisk"></i>
+                        <i class="fa-solid fa-circle-info circle_info"></i>
+                    </div>
+                    <input id="connecting_to_other_services" class="input_text" type="text">
+                </div>
+
+                <div class="style_input_002">
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="website_content" class="label">آیا محتوای وبسایت را آماده کرده‌اید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="website_content" class="input_text" type="text">
+                        </div>
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="country_of_residence" class="label">کشور محل اقامت</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="country_of_residence" class="input_text" type="text">
+                        </div>
+                    </div>
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="design" class="label">آیا طراحی خاصی مدنظر دارید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="design" class="input_text" type="text">
+                        </div>
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="website_address" class="label">در حال حاضر آیا وبسایت دارید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <select id="website_address" class="menu_input_003">
+                                <option>- انتخاب کنید -</option>
+                                <option>بله وبسایت دارم</option>
+                                <option>خیر خیر وبسایت ندارم</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="style_input_002">
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="payment_method_1" class="label">روش پرداخت مورد نظر شما</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <select id="payment_method_1" class="menu_input_003">
+                                <option>- انتخاب کنید -</option>
+                                <option>Cryptocurrency</option>
+                                <option>PayPal</option>
+                            </select>
+                        </div>
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="desired_budget_1" class="label">بودجه مورد نظر (تومان)</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="desired_budget_1" class="input_text" type="text">
+                        </div>
+                    </div>
+                    <div class="style_input_003">
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="delivery_deadline_1" class="label">مهلت تحویل (روز)</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <input id="delivery_deadline_1" class="input_text" type="text">
+                        </div>
+                        <div class="label_and_input">
+                            <div class="label_asterisk">
+                                <label for="support_and_maintenance_1" class="label">آیا نیاز به توسعه و پشتیبانی
+                                    دارید</label>
+                                <i class="fa-solid fa-asterisk asterisk"></i>
+                            </div>
+                            <select id="support_and_maintenance_1" class="menu_input_003">
+                                <option>- انتخاب کنید -</option>
+                                <option>بله به توسعه و پشتبانی نیاز دارم</option>
+                                <option>خیر به توسعه و پشتبانی نیاز ندارم</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
                 <div class="style_input_002">
                     <div class="label_and_input">
                         <div class="label_asterisk">
-                            <label for="website_goal" class="label">هدف اصلی وبسایت</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
+                            <label for="required_features" class="label">ویژگی ‌های مورد نیاز</label>
+                            <i class="fa-solid fa-circle-info circle_info"></i>
                         </div>
-                        <input id="website_goal" class="input_text" type="text">
-                    </div>
-                    <div class="label_and_input">
-                        <!-- این به زبان محتوای وبسایت اشاره دارد، نه زبان‌های برنامه‌نویسی -->
-                        <div class="label_asterisk">
-                            <label for="language_website" class="label">آیا وب‌ سایت چند زبانه باشد</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <select id="language_website" class="menu_input_003">
-                            <option>- انتخاب کنید -</option>
-                            <option>بله وبسایت چند زبانه باشد</option>
-                            <option>خیر نیاز ندارم</option>
-                        </select>
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="number_of_monthly_visits" class="label">چقدر بازدید ماهیانه انتظار دارید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <input id="number_of_monthly_visits" class="input_text" type="text">
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="seo" class="label">آیا به SEO نیاز دارید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <select id="seo" class="menu_input_003">
-                            <option>- انتخاب کنید -</option>
-                            <option>بله به SEO نیاز دارم</option>
-                            <option>خیر به SEO نیاز ندارم</option>
-                        </select>
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="connecting_to_other_services" class="label">اتصال به سرویس ‌های دیگر</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <input id="connecting_to_other_services" class="input_text" type="text">
-                    </div>
-                </div>
-
-                <div class="style_input_002">
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="website_content" class="label">آیا محتوای وبسایت را آماده کرده‌اید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <input id="website_content" class="input_text" type="text">
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="country_of_residence" class="label">کشور محل اقامت</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <input id="country_of_residence" class="input_text" type="text">
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="design" class="label">آیا طراحی خاصی مدنظر دارید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <input id="design" class="input_text" type="text">
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="website_address" class="label">در حال حاضر آیا وبسایت دارید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <select id="website_address" class="menu_input_003">
-                            <option>- انتخاب کنید -</option>
-                            <option>بله وبسایت دارم</option>
-                            <option>خیر خیر وبسایت ندارم</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="style_input_002">
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="payment_method_1" class="label">روش پرداخت مورد نظر شما</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <select id="payment_method_1" class="menu_input_003">
-                            <option>- انتخاب کنید -</option>
-                            <option>Cryptocurrency</option>
-                            <option>PayPal</option>
-                        </select>
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="desired_budget_1" class="label">بودجه مورد نظر (تومان)</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <input id="desired_budget_1" class="input_text" type="text">
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="delivery_deadline_1" class="label">مهلت تحویل (روز)</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <input id="delivery_deadline_1" class="input_text" type="text">
-                    </div>
-                    <div class="label_and_input">
-                        <div class="label_asterisk">
-                            <label for="support_and_maintenance_1" class="label">آیا نیاز به توسعه و پشتیبانی
-                                دارید</label>
-                            <i class="fa-solid fa-asterisk asterisk"></i>
-                        </div>
-                        <select id="support_and_maintenance_1" class="menu_input_003">
-                            <option>- انتخاب کنید -</option>
-                            <option>بله به توسعه و پشتبانی نیاز دارم</option>
-                            <option>خیر به توسعه و پشتبانی نیاز ندارم</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="style_input_002">
-                    <div class="label_and_input">
-                        <label for="required_features" class="label">ویژگی ‌های مورد نیاز</label>
                         <textarea id="required_features" class="style_input_004"></textarea>
                     </div>
                     <div class="label_and_input transition">
-                        <label for="additional_description_1" class="label">توضیحات اضافی</label>
+                        <div class="label_asterisk">
+                            <label for="additional_description_1" class="label">توضیحات اضافی</label>
+                            <i class="fa-solid fa-circle-info circle_info"></i>
+                        </div>
                         <textarea id="additional_description_1" class="style_input_004"></textarea>
                     </div>
                 </div>
@@ -542,105 +589,120 @@
         <p class="main_container_item_title_002">در این بخش من امنیت وبسایت شما را بررسی میکنم</p>
         <form style="display: flex; flex-direction: column; gap: 21px;" action="#" method="post">
             <div class="style_input_002">
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="first_name_2" class="label">نام خود را وارد کنید</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="first_name_2" class="label">نام خود را وارد کنید</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="first_name_2" class="input_text" type="text">
                     </div>
-                    <input id="first_name_2" class="input_text" type="text">
-                </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="last_name_2" class="label">نام خانوادگی خود را وارد کنید</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="last_name_2" class="label">نام خانوادگی خود را وارد کنید</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="last_name_2" class="input_text" type="text">
                     </div>
-                    <input id="last_name_2" class="input_text" type="text">
                 </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="email_2" class="label">ایمیل خود را وارد کنید</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="email_2" class="label">ایمیل خود را وارد کنید</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="email_2" class="input_text" type="email">
                     </div>
-                    <input id="email_2" class="input_text" type="email">
-                </div>
-                <div class="label_and_input">
-                    <label for="phone_2" class="label">شماره تماس خود را وارد کنید</label>
-                    <input id="phone_2" class="input_text" type="tel">
+                    <div class="label_and_input">
+                        <label for="phone_2" class="label">شماره تماس خود را وارد کنید</label>
+                        <input id="phone_2" class="input_text" type="tel">
+                    </div>
                 </div>
             </div>
             <div class="style_input_002">
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="website_type_2" class="label">نوع وبسایت</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="website_type_2" class="label">نوع وبسایت</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <select id="website_type_2" class="menu_input_003">
+                            <option>- انتخاب کنید -</option>
+                            <option>وبسایت شرکتی</option>
+                            <option>وبسایت فروشگاهی</option>
+                            <option>وبسایت شخصی</option>
+                            <option>سایر</option>
+                        </select>
                     </div>
-                    <select id="website_type_2" class="menu_input_003">
-                        <option>- انتخاب کنید -</option>
-                        <option>وبسایت شرکتی</option>
-                        <option>وبسایت فروشگاهی</option>
-                        <option>وبسایت شخصی</option>
-                        <option>سایر</option>
-                    </select>
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="business_name_2" class="label">نام کسب و کار خود را وارد کنید</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="business_name_2" class="input_text" type="text">
+                    </div>
                 </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="business_name_2" class="label">نام کسب و کار خود را وارد کنید</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="business_field_2" class="label">حوزه فعالیت کسب‌ و کار</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="business_field_2" class="input_text" type="text">
                     </div>
-                    <input id="business_name_2" class="input_text" type="text">
-                </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="business_field_2" class="label">حوزه فعالیت کسب‌ و کار</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="server_type_and_specifications" class="label">نوع و مشخصات سرور</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="server_type_and_specifications" class="input_text" type="text">
                     </div>
-                    <input id="business_field_2" class="input_text" type="text">
-                </div>
-            </div>
-            <div class="style_input_002">
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="server_type_and_specifications" class="label">نوع و مشخصات سرور</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
-                    </div>
-                    <input id="server_type_and_specifications" class="input_text" type="text">
-                </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="hosting_company_name" class="label">نام شرکت هاستینگ</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
-                    </div>
-                    <input id="hosting_company_name" class="input_text" type="text">
-                </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="access_type" class="label">نوع دسترسی ارائه‌ شده به کنترل پنل، FTP، SSH
-                            و...</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
-                    </div>
-                    <input id="access_type" class="input_text" type="text">
                 </div>
             </div>
+
             <div class="style_input_002">
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="scan_type" class="label">مایل به انجام چه نوع اسکن‌هایی هستید</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="hosting_company_name" class="label">نام شرکت هاستینگ</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="hosting_company_name" class="input_text" type="text">
                     </div>
-                    <select id="scan_type" class="menu_input_003">
-                        <option>- انتخاب کنید -</option>
-                        <option>اسکن سطحی</option>
-                        <option>اسکن عمیق</option>
-                        <option>اسکن کامل</option>
-                    </select>
-                </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="security_measures" class="label">اقدامات امنیتی فعلی شما چیست</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="user_roles_and_user_access_levels" class="label">نقش‌ های کاربری و سطح دسترسی
+                                ‌های
+                                کاربران</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="user_roles_and_user_access_levels" class="input_text" type="text">
                     </div>
-                    <input id="security_measures" class="input_text" type="text">
                 </div>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="scan_type" class="label">مایل به انجام چه نوع اسکن‌هایی هستید</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <select id="scan_type" class="menu_input_003">
+                            <option>- انتخاب کنید -</option>
+                            <option>اسکن سطحی</option>
+                            <option>اسکن عمیق</option>
+                            <option>اسکن کامل</option>
+                        </select>
+                    </div>
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="security_measures" class="label">اقدامات امنیتی فعلی شما چیست</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="security_measures" class="input_text" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="style_input_002">
                 <div class="label_and_input">
                     <div class="label_asterisk">
                         <label for="database_access" class="label">دسترسی به پایگاه داده (نوع و سطح دسترسی)</label>
@@ -650,21 +712,23 @@
                 </div>
             </div>
             <div class="style_input_002">
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="user_roles_and_user_access_levels" class="label">نقش‌ های کاربری و سطح دسترسی ‌های
-                            کاربران</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="access_type" class="label">نوع دسترسی ارائه‌ شده (دسترسی به کنترل پنل، FTP، SSH
+                                و...)</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="access_type" class="input_text" type="text">
                     </div>
-                    <input id="user_roles_and_user_access_levels" class="input_text" type="text">
-                </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="specific_security_standards" class="label">آیا از استانداردهای امنیتی خاصی پیروی
-                            می‌کنید؟ (مانند ISO 27001، GDPR و ...)</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="specific_security_standards" class="label">آیا از استانداردهای امنیتی خاصی پیروی
+                                می‌کنید؟ (مانند ISO 27001، GDPR و ...)</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="specific_security_standards" class="input_text" type="text">
                     </div>
-                    <input id="specific_security_standards" class="input_text" type="text">
                 </div>
             </div>
             <div class="style_input_002">
@@ -704,41 +768,46 @@
             </div>
 
             <div class="style_input_002">
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="payment_method_2" class="label">روش پرداخت مورد نظر شما</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="payment_method_2" class="label">روش پرداخت مورد نظر شما</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <select id="payment_method_2" class="menu_input_003">
+                            <option>- انتخاب کنید -</option>
+                            <option>Cryptocurrency</option>
+                            <option>PayPal</option>
+                        </select>
                     </div>
-                    <select id="payment_method_2" class="menu_input_003">
-                        <option>- انتخاب کنید -</option>
-                        <option>Cryptocurrency</option>
-                        <option>PayPal</option>
-                    </select>
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="desired_budget_2" class="label">بودجه مورد نظر (تومان)</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="desired_budget_2" class="input_text" type="text">
+                    </div>
                 </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="desired_budget_2" class="label">بودجه مورد نظر (تومان)</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                <div class="style_input_003">
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="delivery_deadline_2" class="label">مهلت تحویل (روز)</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <input id="delivery_deadline_2" class="input_text" type="text">
                     </div>
-                    <input id="desired_budget_2" class="input_text" type="text">
-                </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="delivery_deadline_2" class="label">مهلت تحویل (روز)</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
+                    <div class="label_and_input">
+                        <div class="label_asterisk">
+                            <label for="support_and_maintenance_2" class="label">آیا نیاز به توسعه و پشتیبانی
+                                دارید</label>
+                            <i class="fa-solid fa-asterisk asterisk"></i>
+                        </div>
+                        <select id="support_and_maintenance_2" class="menu_input_003">
+                            <option>- انتخاب کنید -</option>
+                            <option>بله به توسعه و پشتبانی نیاز دارم</option>
+                            <option>خیر به توسعه و پشتبانی نیاز ندارم</option>
+                        </select>
                     </div>
-                    <input id="delivery_deadline_2" class="input_text" type="text">
-                </div>
-                <div class="label_and_input">
-                    <div class="label_asterisk">
-                        <label for="support_and_maintenance_2" class="label">آیا نیاز به توسعه و پشتیبانی دارید</label>
-                        <i class="fa-solid fa-asterisk asterisk"></i>
-                    </div>
-                    <select id="support_and_maintenance_2" class="menu_input_003">
-                        <option>- انتخاب کنید -</option>
-                        <option>بله به توسعه و پشتبانی نیاز دارم</option>
-                        <option>خیر به توسعه و پشتبانی نیاز ندارم</option>
-                    </select>
                 </div>
             </div>
 
@@ -748,11 +817,15 @@
                         <label for="website_attacks" class="label">آیا تاکنون وبسایت شما مورد حمله قرار گرفته است؟ اگر
                             بله، توضیح دهید</label>
                         <i class="fa-solid fa-asterisk asterisk"></i>
+                        <i class="fa-solid fa-circle-info circle_info"></i>
                     </div>
                     <textarea id="website_attacks" class="style_input_004"></textarea>
                 </div>
                 <div class="label_and_input">
-                    <label for="additional_description_2" class="label">توضیحات اضافی</label>
+                    <div class="label_asterisk">
+                        <label for="additional_description_2" class="label">توضیحات اضافی</label>
+                        <i class="fa-solid fa-circle-info circle_info"></i>
+                    </div>
                     <textarea id="additional_description_2" class="style_input_004"></textarea>
                 </div>
             </div>
