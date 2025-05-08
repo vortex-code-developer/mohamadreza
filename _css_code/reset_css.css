@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    appearance: none;
+    font: normal normal normal 16px Vazirmatn, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li, ol li {
+    list-style: none;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 540">
+  <polygon points="270 0 270 270 540 0 270 0" style="fill: #0063ff; stroke-width: 0px;"/>
+  <polygon points="540 0 810 270 810 0 540 0" style="fill: #19b949; stroke-width: 0px;"/>
+  <polygon points="270 540 540 540 270 270 270 540" style="fill: #0047ba; stroke-width: 0px;"/>
+  <polygon points="810 540 810 270 540 540 810 540" style="fill: #128033; stroke-width: 0px;"/>
+  <polygon points="810 0 810 270 1080 270 810 0" style="fill: #90ee80; stroke-width: 0px;"/>
+  <polygon points="810 270 810 540 1080 270 810 270" style="fill: #19b949; stroke-width: 0px;"/>
+  <polygon points="0 270 270 270 270 0 0 270" style="fill: #00a4ff; stroke-width: 0px;"/>
+  <polygon points="270 540 270 270 0 270 270 540" style="fill: #0063ff; stroke-width: 0px;"/>
+</svg>

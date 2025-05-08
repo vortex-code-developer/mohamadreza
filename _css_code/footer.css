@@ -1,0 +1,121 @@
+/* Footer */
+.footer{
+    width: 100%;
+    background-color: #3a3318;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Social networks */
+.social_networks_001{
+    width: 100%;
+    margin: 55px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+}
+.title_footer{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+.social_networks_002{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.social_networks_003{
+    width: 46px;
+    height: 46px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo_social_networks{
+    width: 30px;
+    height: auto;
+}
+
+/* separator */
+.separator{
+    width: 1360px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #808080;
+    border: none;
+}
+
+/* Contact information */
+.contact_information_001{
+    width: 100%;
+    margin: 55px 0;
+    display: flex;
+    gap: 139px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.contact_information_002{
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    font-size: 28px;
+    font-weight: 800;
+}
+.contact_information_003{
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact_information_003 p{
+    cursor: pointer;
+}
+.contact_information_004{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Logo permissions */
+.logo_permissions_001{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.logo_permissions_002{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+}
+.logo_permissions_003{
+    width: 45px;
+    height: auto;
+}
+
+/* Copyright */
+.copyright{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin: 42px 0;
+}
